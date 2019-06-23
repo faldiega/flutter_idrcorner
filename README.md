@@ -1,2 +1,2 @@
-# flutter_idrcorner
-Belajar Flutter
+# Flutter_idrcorner
+Belajar Flutter dari channel youtube idr_corner, untuk mengetahui pemrograman Mobile Apps.
