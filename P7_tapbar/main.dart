@@ -40,10 +40,10 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
         bottom: new TabBar(
           controller: controller,
           tabs: <Widget>[
-            new Tab(icon: new Icon(Icons.computer),),
-            new Tab(icon: new Icon(Icons.headset),),
-            new Tab(icon: new Icon(Icons.radio),),
-            new Tab(icon: new Icon(Icons.smartphone),),
+            new Tab(icon: new Icon(Icons.computer),text: "Komputer",),
+            new Tab(icon: new Icon(Icons.headset),text: "Headset",),
+            new Tab(icon: new Icon(Icons.radio),text: "Radio",),
+            new Tab(icon: new Icon(Icons.smartphone),text: "Smartphone",),
           ],
         ),
       ),
@@ -55,6 +55,19 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
           new rdo.Radio(),
           new hp.Smartphone(),
         ],
+      ),
+
+      bottomNavigationBar: new Material(
+        color: Colors.amber,
+        child: new TabBar(
+          controller: controller,
+          tabs: <Widget>[
+            new Tab(icon: new Icon(Icons.computer),),
+            new Tab(icon: new Icon(Icons.headset),),
+            new Tab(icon: new Icon(Icons.radio),),
+            new Tab(icon: new Icon(Icons.smartphone),),
+          ],
+        ),
       ),
     );
   }
